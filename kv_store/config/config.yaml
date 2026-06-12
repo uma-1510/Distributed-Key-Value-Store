@@ -1,0 +1,11 @@
+nodes:
+    - "deployments-node-1:50051"
+    - "deployments-node-2:50051"
+    - "deployments-node-3:50051"
+    - "deployments-node-4:50051"
+    - "deployments-node-5:50051"
+consistency:
+    n: 3
+    w: 2
+    r: 2 
+    

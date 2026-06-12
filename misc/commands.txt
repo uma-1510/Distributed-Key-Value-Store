@@ -1,0 +1,11 @@
+// docker-compose up --build --remove-orphans
+
+// docker-compose up --build --force-recreate --no-deps --remove-orphans
+
+// Set the number of nodes here, and then configure config.yaml file
+docker compose up --build  --remove-orphans --scale node=5
+
+
+
+// Protocol Buffer Compile
+protoc --go_out=api/pb/coordinator --go-grpc_out=api/pb/coordinator api/coordinator.proto
